@@ -7,15 +7,15 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  text-align: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 80px 0 0 0;
 }
 
 h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -43,10 +43,23 @@ nav ul {
   display: flex;
 }
 
+li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
 nav a {
   display: block;
   padding: 10px 20px;
-  color: #333;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.first-nav {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
 }
@@ -78,6 +91,20 @@ footer {
   padding: 30px;
   background-color: #333;
   color: #fff;
+}
+
+.fixed-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;        
+  background: rgb(0, 0, 255);
+  padding: 10px;
+  color: #fff;
+}
+.fixed-header{
+  top: 0;
 }
 
 footer p {
