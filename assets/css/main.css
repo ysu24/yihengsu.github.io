@@ -161,6 +161,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		text-decoration: none;
+		text-transform: none;
 	}
 
 		a:hover {
@@ -177,7 +178,7 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -208,16 +209,18 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		margin: 0 0 1.5rem 0;
+		text-transform: none;
 	}
 
 	h4 {
-		font-size: 1rem;
+		font-size: 1.25rem;
+		text-transform: none;
 	}
-
+/* used for cv title */
 	h5 {
-		font-size: 0.9rem;
+		font-size: 2.5rem;
 	}
 
 	h6 {
