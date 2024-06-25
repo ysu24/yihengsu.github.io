@@ -1,7 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -111,7 +110,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 15pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -174,6 +173,17 @@ input, select, textarea {
 	p {
 		text-align: justify;
 		margin: 0 0 1rem 0;
+		/* standard font size */
+		font-size: 0.85rem;
+	}
+	
+	.small-text {
+		font-size: 0.6em; /* Adjust the value as needed */
+	}
+
+	.large-text {
+		font-size: 6em; /* Adjust the value as needed */
+		font-weight: bold;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2848,6 +2858,8 @@ input, select, textarea {
 		list-style: disc;
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
+		/* standard font size */
+		font-size: 0.85rem;
 	}
 
 		ul li {
