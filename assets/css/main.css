@@ -110,7 +110,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 15pt;
+		font-size: 16pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -174,7 +174,7 @@ input, select, textarea {
 		text-align: justify;
 		margin: 0 0 1rem 0;
 		/* standard font size */
-		font-size: 0.85rem;
+		/* font-size: 0.85rem; */
 	}
 	
 	.small-text {
@@ -2859,7 +2859,7 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 		padding-left: 1rem;
 		/* standard font size */
-		font-size: 0.85rem;
+		/* font-size: 0.85rem; */
 	}
 
 		ul li {
