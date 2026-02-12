@@ -1,0 +1,608 @@
+.blog-button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.blog-button a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0056b3;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.blog-button a:hover {
+    background: #0066cc;
+}
+
+
+/* General styles */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #003d82;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 35px auto;
+    padding: 0 30px;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 28%;
+    text-align: center;
+    position: sticky;
+    top: 35px;
+    align-self: flex-start;
+    background: #ffffff;
+    padding: 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #e9ecef;
+}
+
+.sidebar h1 {
+    font-size: 1.35rem;
+    color: #212529;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.sidebar p {
+    margin: 6px 0;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.sidebar .social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.sidebar .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.1rem;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.sidebar .social-icons a:hover {
+    color: #0056b3;
+    background: #e9ecef;
+}
+
+/* Custom tooltip */
+.sidebar .social-icons a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
+
+.sidebar .social-icons a::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #333;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    margin-bottom: -5px;
+    z-index: 1000;
+}
+
+.sidebar .social-icons a:hover::after,
+.sidebar .social-icons a:hover::before {
+    opacity: 1;
+}
+
+/* Main content styles */
+.main-content {
+    width: 72%;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.main-content h2 {
+    font-size: 1.3rem;
+    color: #212529;
+    margin-bottom: 15px;
+    margin-top: 28px;
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e9ecef;
+    position: relative;
+}
+
+.main-content h2::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #0056b3;
+}
+
+.main-content h2:first-child {
+    margin-top: 0;
+}
+
+.main-content p {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+/* Publications styles */
+.publications .publication {
+    margin-bottom: 14px;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #6c757d;
+    transition: all 0.2s ease;
+}
+
+.publications .publication:hover {
+    background: #e9ecef;
+    border-left-color: #0056b3;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.publications .publication .title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    color: #0056b3;
+    line-height: 1.35;
+}
+
+.publications .publication .title a {
+    color: #0056b3;
+}
+
+.publications .publication .title a:hover {
+    color: #003d82;
+    text-decoration: underline;
+}
+
+.publications .publication .author {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.publications .publication .author strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+.publications .publication .periodical {
+    font-size: 0.75rem;
+    color: #888;
+    font-style: italic;
+}
+
+.publications .publication .periodical em {
+    color: #212529;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.publications .publication .periodical strong {
+    color: #d97706;
+    font-weight: 600;
+    font-style: normal;
+    background: #fef3c7;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+.publications .publication .equal-contribution {
+    color: #d32f2f;
+    font-size: 0.75rem;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.projects .project {
+    margin-bottom: 14px;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #6c757d;
+    transition: all 0.2s ease;
+}
+
+.projects .project:hover {
+    background: #e9ecef;
+    border-left-color: #0056b3;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.projects .title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    color: #0056b3;
+    line-height: 1.35;
+}
+
+.projects .title a {
+    color: #0056b3;
+}
+
+.projects .title a:hover {
+    color: #003d82;
+    text-decoration: underline;
+}
+
+.projects .description {
+    font-size: 0.8rem;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.projects .project-links {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projects .project-links a {
+    color: #0056b3;
+}
+
+.projects .project-links a:hover {
+    color: #003d82;
+    text-decoration: underline;
+}
+
+.projects .project-links img {
+    vertical-align: middle;
+    height: 18px;
+}
+
+.projects .periodical {
+    font-size: 0.75rem;
+    color: #888;
+    font-style: italic;
+}
+
+
+/* Experience styles */
+.experience {
+    margin-top: 10px;
+}
+
+.experience .job {
+    margin-bottom: 14px;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #6c757d;
+    transition: all 0.2s ease;
+}
+
+.experience .job:hover {
+    background: #e9ecef;
+    border-left-color: #0056b3;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.experience .job .title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    color: #212529;
+    line-height: 1.35;
+}
+
+.experience .job .location {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.experience .job .date {
+    font-size: 0.75rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.experience .job .mentor {
+    font-size: 0.8rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* Teaching styles */
+.teaching {
+    margin-top: 10px;
+}
+
+.teaching .teaching-item {
+    margin-bottom: 14px;
+    padding: 14px 18px;
+    background: #f1f3f5;
+    border-radius: 6px;
+    border-left: 4px solid #2563eb;
+    transition: all 0.2s ease;
+}
+
+.teaching .teaching-item:hover {
+    background: #e9ecef;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.teaching .teaching-item .title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #212529;
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+
+.teaching .teaching-item .institution {
+    font-size: 0.82rem;
+    color: #666;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.teaching .teaching-item .term {
+    font-size: 0.78rem;
+    color: #777;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+        background: #f8f9fa;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 25px;
+        margin: 20px auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        position: static;
+        padding: 25px 20px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .sidebar img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .sidebar h1 {
+        font-size: 1.3rem; /* 保持标题清晰 */
+        margin-bottom: 12px;
+    }
+
+    .sidebar p {
+        font-size: 0.9rem;
+        margin: 8px 0;
+        line-height: 1.6; /* 增加行高，提高可读性 */
+    }
+
+    .sidebar .social-icons {
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    .sidebar .social-icons a {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+    }
+
+    .blog-button {
+        margin-top: 25px;
+    }
+
+    .blog-button a {
+        padding: 12px 24px; /* 增大按钮，便于点击 */
+        font-size: 1rem;
+        display: block;
+        margin: 0 auto;
+        max-width: 280px; /* 限制最大宽度 */
+    }
+
+    .main-content h2 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+        margin-top: 25px; /* 增加章节间距 */
+    }
+
+    .main-content h2:first-child {
+        margin-top: 0;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    /* 优化出版物和项目样式 */
+    .publications .publication,
+    .projects .project,
+    .experience .job,
+    .teaching .teaching-item {
+        margin-bottom: 18px;
+        padding: 15px 18px;
+        border-left-width: 3px;
+    }
+
+    .publications .publication:hover,
+    .projects .project:hover,
+    .experience .job:hover,
+    .teaching .teaching-item:hover {
+        transform: translateX(3px);
+    }
+
+    .publications .publication .title,
+    .projects .title,
+    .experience .job .title,
+    .teaching .teaching-item .title {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        word-wrap: break-word; /* 确保长标题换行 */
+    }
+
+    .publications .publication .author,
+    .projects .description,
+    .experience .job .location,
+    .experience .job .mentor,
+    .teaching .teaching-item .institution {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 6px;
+    }
+
+    .publications .publication .periodical,
+    .projects .periodical,
+    .experience .job .date,
+    .teaching .teaching-item .term {
+        font-size: 0.85rem;
+    }
+
+    /* 优化链接样式 */
+    a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* 确保邮箱链接在移动端正确显示 */
+    .sidebar p a {
+        display: inline-block;
+        margin-top: 4px;
+        color: #0056b3;
+        font-weight: 500;
+    }
+
+    .sidebar p a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* 针对更小的手机屏幕进一步优化 */
+@media (max-width: 480px) {
+    .container {
+        padding: 12px 15px;
+        gap: 20px;
+    }
+
+    .sidebar img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .sidebar h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.15rem;
+    }
+
+    .sidebar .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .blog-button a {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

@@ -1,336 +1,54 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <!-- Basic page needs -->
-        <title>Yiheng Su</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-        <!-- MathJax -->
-        <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
-    </head>
-    <body class="is-preload">
-
-        <!-- Wrapper for the entire page content -->
-        <div id="wrapper">
-
-            <!-- Header Section -->
-            <header id="header">
-                <h1 class="large-text">YIHENG SU</h1>
-            </header>
-
-            <!-- Navigation Section -->
-            <nav id="nav">
-                <!-- Main navigation links -->
-                <ul class="links">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <!-- Social media icons -->
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/yiheng-su-967a1222b/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/ysu24" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
-            </nav>
-
-            <!-- Main content area -->
-            <div id="main">
-
-                <!-- Introduction Article -->
-                <article class="post featured">
-                    <div class="row">
-                        <div class="col-3 col-12-small">
-                            <a class="image fit"><img src="images/YihengSu_2024.jpeg" alt="" /></a>
-                        </div>
-                        <div class="col-9 col-12-small">
-                            <p> Hi! I'm a Computer Science graduate student at the University of Wisconsin-Madison with experience in game theory, graph theory, and algorithm design.
-                                I am eager to develop my skills further and contribute to innovative projects in these exciting fields!
-                            </p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Projects Section Header
-                <header>
-                    <h5>PROJECTS</h5>
-                </header> -->
-
-                <!-- Individual Projects -->
-                <article>
-                    <h5>RESEARCH</h5>
-                    
-
-                <!-- Article for Upper Bounding Unit Distance Graphs -->
-                <article>
-                    <header>
-                        <h2>Upper Bounding Unit Distance Graphs</h2>
-                        <p>Keywords: beam search; unit distance graphs; exploitation-exploration; planar geometry; combinatorial optimization</p>
-                    </header>
-                    <div>
-                        <div>
-                            <p> What is the maximum number of edges u(n) that a unit distance graph 
-                                (UDG) of n vertices can have, as asked by an unsolved problem of 
-                                Paul Erdős? We address the problem of determining the 
-                                maximum number 
-                                of edges in a UDG of n vertices using 
-                                computer search. We seek to demonstrate a computer algorithm to 
-                                generate dense UDGs for vertex counts up to at least 100. 
-                                Via beam search with an added visitation metric, our algorithm 
-                                finds all known maximally dense UDGs up to isomorphism at the 
-                                push of a button. In addition, for 15 < n, where u(n) is 
-                                unknown, 
-                                <strong> i) the algorithm finds all previously published densest 
-                                UDGs up to isomorphism for 15 < n ≤ 30, ii) the rate of growth 
-                                of u(n)/n remains similar for 30 < n. iii) we build a database
-                                of over 60 million UDGs found by our algorithm.</strong>
-                                The preprint of the paper is available on arXiv.
-                            </p>
-                            <p><strong>★Features:</strong></p>
-                            <ul>
-                                <li> Designed a novel heuristic beam search algorithm to improved the maximum number of edges in unit distance graphs.</li>
-                                <li> Explored graph constructions from the Moser Lattice with heuristic generating rules like rotation, translation, and reflection.</li>
-                                <li> Used multiprocessor and GPU implementations to optimize the efficiency of the search algorithms.</li>
-                            </ul>
-
-                            <p><strong>★Skills:</strong> Python; Numpy, Matplotlib, Pandas, Scikit-learn, Multiprocessing.</p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-8 col-12-small">
-                                <a class="image fit"><img src="images/udg_database.png" loading="lazy" alt="" /></a>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <a class="image fit"><img src="images/udg30.png" loading="lazy" alt=""  /></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <ul class="actions special">
-                        <!-- <li style="margin-right: 50px;"><a href="https://dl.acm.org/doi/pdf/10.1145/3610977.3634968" class="button">View Paper</a></li> -->
-                        <li style="margin-right: 50px;"><a href="https://arxiv.org/abs/2406.15317" class="button">View Paper</a></li>
-                        <li ><a href="https://codeberg.org/zsamboki/dbs-udg" class="button">Code and Database</a></li>
-                    </ul>   
-                    
-                </article>
-
-                
-
-				<!-- Article for Laplacian Eigenmaps and Orthogonal Polynomials -->
-                <article>
-                    <header>
-                        <h2>Laplacian Eigenmaps and Chebyshev Polynomials</h2>
-                        <p>Subjects: probability; metric geometry; statistics theory</p>
-                    </header>
-
-                    <div>
-                        <div>
-                            <p> Eigenmaps are important in analysis, geometry, and machine learning, 
-                                particularly in nonlinear dimension reduction. This project 
-                                investigates the relationship between eigen-coordinates of graph 
-                                Laplacians and Chebyshev polynomials. We will consider constructing 
-                                graph Laplacian operators on $[-1,1]$, $[-1,1]^2$, the sphere $S^2$, 
-                                and the Sierpinski gasket. We also have explored these operators when 
-                                the points are selected randomly with various distributions, such as 
-                                uniform and Gaussian. We have developed algorithms capable of 
-                                generating eigenmap plots for the aforementioned sample spaces. 
-                                In our next step, we would also like to compare the eigen-coordinates 
-                                of graph Laplacian operators constructed from those intervals with 
-                                families of orthogonal polynomials, such as the Hermite polynomials 
-                                and possibly exceptional orthogonal polynomials. The paper is available on
-                                the UConn REU website.
-                            </p>
-                            <p><strong>★Features:</strong></p>
-                            <ul>
-                                <li>Studied eigenmaps of Laplacian matrices transforming high-dimensional data into graph representations.</li>
-                                <li>Use NumPy and Matplotlib to visualize the eigenmaps.</li>
-                                <li>Explored the properties of eigenmaps, including data distribution, manifold smoothness, and boundary conditions.</li>
-                                <li>Analyzed eigenmaps on structures including intervals, squares, torus, and the Sierpinski triangle, emphasizing their connections to orthogonal polynomials and optimal parameter choices.</li>
-                            </ul>
-                            <p>★Skills: Python, MATLAB; NumPy.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <a class="image fit"><img src="images/eigenplot.png" loading="lazy" alt="Eigenplot" /></a>
-                        </div>
-                    </div>
-
-                    <ul class="actions special">
-                        <li><a href="https://arxiv.org/abs/2406.19510" class="button">View Paper</a></li>
-                    </ul>
-
-                </article>
-
-
-                    <header>
-                        <h2>Dimensional Design of Emotive Sounds for Robots</h2> 
-                        <p>HRI '24: Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction <br>                        
-                        Keywords: non-linguistic utterances; human-robot interaction; emotive sound; algorithmic composition</p>
-                    </header>
-
-                    <div>
-                        <p> Non-Linguistic Utterances (NLUs) are crucial in both human-human and human-robot interactions. We explored how specific audio qualities affect the perception of emotional arousal and pleasure. A novel generative algorithm was designed to express various emotions using musical and prosodic parameters. An end-user evaluation had participants interpret NLUs representing excitement, contentment, sadness, and anger. 
-                            <strong>The study revealed that participants consistently associated excited, sad and angry NLUs with significantly different emotional states but not for content NLUs.</strong>  Results are published in the 2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI '24).
-                        </p>
-
-                        <p>★Features:</p>
-
-                        <ul>
-                            <li>Implemented a non-linguistic utterances generator conveying emotions on the DARwIn-OP robot.</li>
-                            <li>Designed motions for the robot and developed the user study.</li>
-                            <li>Conducted user studies to explore the perception of non-linguistic utterances generated by the robot.</li>
-                            <li>Analyzed experimental data to explore the correlation between non-linguistic utterances and emotions.</li>
-                        </ul>
-
-                        <p><strong>★Skills:</strong> Python, C++; Numpy, Matplotlib, Pandas, Scikit-learn, nltk, statsmodels, seaborn.</p>
-                    </div>
-                    
-
-                    <div class="row">
-                        <div class="col-4 col-12-small">
-                            <a class="image fit"><img src="images/hri_robot_screenshot.png" loading="lazy" alt="" /></a>
-                        </div>
-                        <div class="col-4 col-12-small">
-                            <a class="image fit"><img src="images/2d_graph_large_font.png" loading="lazy" alt="" /></a>
-                            <!-- <p class="small-text">This plot displays the participants' ratings of words and sounds on the Pleasure and Arousal scales for emotions. Participants ratings of adjectives are represented by blue points and their ratings of sounds are represented by red points. The emotive sounds that represented "excited", "sad", and "angry" were rated similarly to how the corresponding adjective was rated. However, the emotive sound "content" was found to have high arousal and high pleasure scores.</p> -->
-                        </div>
-                        <div class="col-4 col-12-small">
-                            <a class="image fit"><img src="images/word_frequency_large_font.png" loading="lazy" alt="" /></a>
-                        </div>
-                        <!-- <p> Hannen Wolfe, Yiheng Su, and Jue Wang. 2024. Dimensional Design of Emotive Sounds for Robots. In Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI '24). Association for Computing Machinery, New York, NY, USA, 791-799. https://doi.org/10.1145/3610977.3634968 </p> -->
-                    </div>
-
-                    <ul class="actions special">
-                        <!-- <li style="margin-right: 50px;"><a href="https://dl.acm.org/doi/pdf/10.1145/3610977.3634968" class="button">View Paper</a></li> -->
-                        <li style="margin-right: 50px;"><a href="https://dl.acm.org/doi/pdf/10.1145/3610977.3634968" class="button">View Paper</a></li>
-                        <li ><a href="https://dl.acm.org/doi/10.1145/3610977.3634968" class="button">View Demo</a></li>
-                    </ul>   
-
-                </article>
-
-                <!-- Section Header for Selected Projects -->
-                <!-- <header>
-                    <h5>SELECTED PROJECTS</h5>
-                </header> -->
-
-                <!-- Article for Disneyland One-Day Schedule -->
-                <article>
-                    <h5>SELECTED PROJECTS</h5>
-                    <header>
-                        <h2>Optimizing a One-Day Disneyland Itinerary</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-5 col-12-small">
-                            <a class="image fit"><img src="images/minTravelMap.png" loading="lazy" alt="Optimized Disneyland Travel Map" /></a>
-                        </div>
-                        <div class="col-7 col-12-small">
-                            <p>This project tackles the challenge of making the most of a one-day visit to Disneyland Magic Kingdom. Using real wait time data, park layout, and integer programming, it generates optimal schedules to <strong>maximize rides played</strong>, <strong>minimize wait and walking time</strong>, and <strong>balance personal preferences</strong>. Inspired by the Traveling Salesman Problem (TSP), the model produces itineraries that adapt to park conditions and visitor priorities, offering a smarter and more enjoyable park experience.</p>
-                        </div>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/ysu24/Disneyland-One-Day-Schedule" class="button">GitHub Repo</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Article for Computer Visualizations on the Hyperbolic Plane -->
-                <article>
-                    <header>
-                        <h2>Computer Visualizations on the Hyperbolic Plane</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-4 col-12-small">
-                            <a class="image fit"><img src="images/hyperbolic.png" loading="lazy" alt="" /></a>
-                        </div>
-                        <div class="col-8 col-12-small">
-                            <p> This project explores games and visualizations designed in hyperbolic geometry, inspired by the game <strong>HyperRogue</strong>, which takes place in the Poincaré disk model of the hyperbolic plane. Fascinated by the geometry and mechanics, I researched other non-Euclidean games like <em>Hyperbolica</em> and <em>Hypermine</em>, and eventually created my own interactive visualizations using the <strong>Hyperbolic Canvas</strong> JavaScript library. This project combines mathematical understanding with basic web programming to simulate geodesics and tilings in hyperbolic space. </p>
-                        </div>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/ysu24/Disk-Model/blob/main/Computer_Visualizations_on_the_Hyperbolic_Plane.pdf" class="button">GitHub Repo</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Article for Integer Factorization Algorithms -->
-                <article>
-                    <header>
-                        <h2>Integer Factorization Algorithms</h2>
-                    </header>
-                    <div class="row">
-                        <div class="col-5 col-12-small">
-                            <a class="image fit"><img src="images/semiprimes_close.png" loading="lazy" alt="" /></a>
-                        </div>
-                        <div class="col-7 col-12-small">
-                            <p> This project investigates the problem of decomposing composite numbers into prime factors, a fundamental question in number theory and cryptography. I implemented and compared five classical algorithms—Trial Division, Wheel Factorization, Fermat's Method, Kraitchik-Fermat, and Pollard's <em>p − 1</em>—evaluating their runtime across different inputs. Through this exploration, I gained insight into the computational complexity of integer factorization and how algorithmic improvements affect performance in practice. </p>
-                        </div>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/ysu24/Integer-Factorization-Algorithms" class="button">GitHub Repo</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Article for Golf Simulator Game: Hole in One -->
-                <!-- <article>
-                    <header>
-                        <h2>Golf Simulator Game: Hole in One</h2>
-                    </header>
-
-
-                    <div class="row">
-                        <div class="col-4 col-12-small">
-                            <a class="image fit"><img src="images/golf.jpg" loading="lazy" alt="" /></a>
-                        </div>
-                        <div class="col-8 col-12-small">
-                            <p> Hole-in-One is a 2D simulation game where players compete to launch their ball into a hole. The game features a variety of obstacles and interactable terrains, challenging players to think strategically to succeed.</p>
-                        </div>
-                        <ul class="actions special">
-                            <li><a href="https://github.com/ysu24/Hole_in_one" class="button">Read More</a></li>
-                        </ul>
-                    </div>
-                </article> -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiheng Su</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="assets/img/yiheng_profile.jpg" alt="Yiheng Su">
+            <h1>Yiheng Su</h1>
+            <p>Computer Science PhD student</p>
+            <p>University of Wisconsin–Madison</p>
+            <p>Email: <a href="mailto:su228@wisc.edu">su228@wisc.edu</a></p>
+            <div class="social-icons">
+                <a href="mailto:su228@wisc.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="assets/cv/YSu_CV.pdf" title="Resume / CV"><i class="fa-solid fa-file-lines"></i></a>
+                <a href="https://github.com/ysu24" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yiheng-su-967a1222b/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
-
-            <!-- Footer Section -->
-            <footer id="footer">
-                <section class="split contact">
-                    <section>
-                        <h3>Phone</h3>
-                        <p><a href="tel:+12076800819">(207) 680-0819</a></p>
-                    </section>
-                    <section>
-                        <h3>Email</h3>
-                        <p><a href="mailto:su228@wisc.edu">su228@wisc.edu</a></p>
-                    </section>
-                    <section>
-                        <h3>Social</h3>
-                        <ul class="icons alt">
-                            <li><a href="https://www.linkedin.com/in/yiheng-su-967a1222b/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/ysu24" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                        </ul>
-                    </section>
-                </section>
-            </footer>
-
-            <!-- Copyright -->
-            <div id="copyright">
-                <ul><li>&copy; Yiheng Su</li></ul>
-            </div>
-
         </div>
 
-        <!-- JavaScripts for various page functionalities -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>About Me</h2>
+            <p>I’m a Computer Science PhD student at the University of Wisconsin–Madison. Broadly, I’m interested in game theory, learning theory, and optimization in multi-agent settings. Recently, I’ve been focusing on the dynamics of learning in games under strategic interaction and informational asymmetry. I’m open to research collaborations and internship opportunities.
+            </p>
 
-    </body>
+            <h2>Publications</h2>
+            <div class="publications" id="publications"></div>
+
+            <h2>Experience</h2>
+            <div class="experience" id="experience"></div>
+
+            <h2>Teaching</h2>
+            <div class="teaching" id="teaching"></div>
+
+            <h2>Projects</h2>
+            <div class="projects" id="projects"></div>
+
+<!--             <h2>Values</h2> -->
+<!-- <p>
+    I'm not the kind of person who sits back and waits for things to happen — when I see an opportunity, I fight for it; when I face difficulties, I confront them head-on. I strive to create work that drives real <strong>impact</strong> — not just technical novelty, but ideas that matter. My goal is to push boundaries in ways that make a meaningful difference.
+</p> -->
+        </div>
+    </div>
+    <script src="assets/js/render.js"></script>
+</body>
 </html>
