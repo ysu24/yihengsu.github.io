@@ -1,36 +1,62 @@
 [
+  {
+    "title": "The Complexity of Strategizing Against No-Regret Learners: Pure Where It Is Easy, Hard Even When Mixed",
+    "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "venue": "Under review",
+    "year": "2026",
+    "type": "Preprint"
+  },
 
-{
-  "title": "On the Exploitability of FTRL Dynamics",
-  "url": "https://arxiv.org/abs/2604.05129",
-  "venue": "(under review) arXiv preprint arXiv:2604.05129 (2026)"
-},
-
-{
-  "title": "Breaking the 1/ε Barrier in Quantum Zero-Sum Games: Generalizing Metric Subregularity for Spectraplexes",
-  "url": "https://arxiv.org/abs/2509.21570",
-  "authors": "Yiheng Su, Emmanouil-Vasileios Vlatakis-Gkaragkounis, and Pucheng Xiong",
-  "venue": "(under review) arXiv preprint arXiv:2509.21570 (2025)"
-},
-
-{
-  "title": "Diverse Beam Search to Find Densest-Known Planar Unit Distance Graphs",
-  "url": "https://doi.org/10.1080/10586458.2025.2507956",
-  "authors": "Peter Engel, Owen Hammond-Lee, Yiheng Su, Dániel Varga, and Pál Zsámboki",
-  "venue": "Experimental Mathematics (2025), pp. 1–13"
-},
-
-{
-  "title": "Convergence, Optimization and Stability of Singular Eigenmaps",
-  "url": "https://arxiv.org/abs/2406.19510",
-  "authors": "Bernard Akwei, Bobita Atkins, Rachel Bailey, Ashka Dalal, Natalie Dinin, Jonathan Kerby-White, Tess McGuinness, Tonya Patricks, Luke Rogers, Genevieve Romanelli, Yiheng Su, and Alexander Teplyaev",
-  "venue": "(under review) arXiv preprint arXiv:2406.19510 (2024)"
-},
-{
-  "title": "Dimensional Design of Emotive Sounds for Robots",
-  "url": "https://dl.acm.org/doi/10.1145/3610977.3634968",
-  "authors": "Hannen Wolfe, Yiheng Su, and Jue Wang",
-  "venue": "Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction (2024), pp. 791–799"
-}
-
+  {
+    "title": "No Coin Left Behind: Maximizing Strategic Surplus Against No-Regret Dynamics",
+    "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "venue": "Neurips",
+    "year": "2026",
+    "type": "Conference",
+    "links": [
+      { "label": "arXiv", "url": "https://arxiv.org/abs/2604.05129" }
+    ]
+  },
+  {
+    "title": "Breaking the 1/ε Barrier in Quantum Zero-Sum Games: Generalizing Metric Subregularity for Spectraplexes",
+    "authors": "Yiheng Su, Emmanouil-Vasileios Vlatakis-Gkaragkounis, and Pucheng Xiong",
+    "venue": "Under review",
+    "year": "2025",
+    "type": "Preprint",
+    "links": [
+      { "label": "arXiv", "url": "https://arxiv.org/abs/2509.21570" }
+    ]
+  },
+  {
+    "title": "Diverse Beam Search to Find Densest-Known Planar Unit Distance Graphs",
+    "authors": "Peter Engel, Owen Hammond-Lee, Yiheng Su, Dániel Varga, and Pál Zsámboki",
+    "venue": "Experimental Mathematics",
+    "year": "2025",
+    "type": "Journal",
+    "links": [
+      { "label": "Paper", "url": "https://doi.org/10.1080/10586458.2025.2507956" },
+      { "label": "arXiv", "url": "https://arxiv.org/abs/2406.15317" },
+      { "label": "Code", "url": "https://codeberg.org/zsamboki/dbs-udg" }
+    ]
+  },
+  {
+    "title": "Convergence, Optimization and Stability of Singular Eigenmaps",
+    "authors": "Bernard Akwei, Bobita Atkins, Rachel Bailey, Ashka Dalal, Natalie Dinin, Jonathan Kerby-White, Tess McGuinness, Tonya Patricks, Luke Rogers, Genevieve Romanelli, Yiheng Su, and Alexander Teplyaev",
+    "venue": "Under review",
+    "year": "2024",
+    "type": "Preprint",
+    "links": [
+      { "label": "arXiv", "url": "https://arxiv.org/abs/2406.19510" }
+    ]
+  },
+  {
+    "title": "Dimensional Design of Emotive Sounds for Robots",
+    "authors": "Hannen Wolfe, Yiheng Su, and Jue Wang",
+    "venue": "ACM/IEEE HRI",
+    "year": "2024",
+    "type": "Conference",
+    "links": [
+      { "label": "Paper", "url": "https://dl.acm.org/doi/10.1145/3610977.3634968" }
+    ]
+  }
 ]

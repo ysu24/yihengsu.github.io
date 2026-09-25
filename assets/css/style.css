@@ -199,69 +199,59 @@ a:hover {
 
 /* Publications styles */
 .publications .publication {
-    margin-bottom: 14px;
-    padding: 12px 18px;
-    background: #f8f9fa;
-    border-radius: 6px;
-    border-left: 3px solid #6c757d;
-    transition: all 0.2s ease;
-}
-
-.publications .publication:hover {
-    background: #e9ecef;
-    border-left-color: #0056b3;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
 .publications .publication .title {
     font-weight: 700;
-    font-size: 0.92rem;
+    font-size: 1rem;
     margin-bottom: 6px;
-    color: #0056b3;
+    color: #212529;
     line-height: 1.35;
 }
 
-.publications .publication .title a {
-    color: #0056b3;
-}
-
-.publications .publication .title a:hover {
-    color: #003d82;
-    text-decoration: underline;
-}
-
 .publications .publication .author {
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 0.9rem;
+    color: #212529;
     margin-bottom: 4px;
     line-height: 1.4;
 }
 
 .publications .publication .author strong {
     color: #212529;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .publications .publication .periodical {
-    font-size: 0.75rem;
-    color: #888;
-    font-style: italic;
+    font-size: 0.85rem;
+    color: #212529;
+    margin-bottom: 4px;
 }
 
 .publications .publication .periodical em {
     color: #212529;
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 400;
 }
 
 .publications .publication .periodical strong {
-    color: #d97706;
-    font-weight: 600;
-    font-style: normal;
-    background: #fef3c7;
-    padding: 2px 6px;
-    border-radius: 3px;
-    margin-left: 4px;
+    color: #212529;
+    font-weight: 700;
+}
+
+.publications .publication .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.publications .publication .publication-links a {
+    color: #212529;
+}
+
+.publications .publication .publication-links a:hover {
+    color: #0056b3;
 }
 
 .publications .publication .equal-contribution {
@@ -512,7 +502,6 @@ a:hover {
     }
 
     /* 优化出版物和项目样式 */
-    .publications .publication,
     .projects .project,
     .experience .job,
     .teaching .teaching-item {
@@ -521,7 +510,6 @@ a:hover {
         border-left-width: 3px;
     }
 
-    .publications .publication:hover,
     .projects .project:hover,
     .experience .job:hover,
     .teaching .teaching-item:hover {

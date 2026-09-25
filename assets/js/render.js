@@ -46,34 +46,55 @@ function renderProjects(items) {
 }
 
 function renderPublications(items) {
-  const container = document.getElementById("publications");
-  if (!container) return;
+  const publicationsContainer = document.getElementById("publications");
+  const preprintsContainer = document.getElementById("preprints");
+  if (!publicationsContainer || !preprintsContainer) return;
 
   if (!Array.isArray(items) || items.length === 0) {
-    container.innerHTML = "<p>Publications coming soon.</p>";
+    publicationsContainer.innerHTML = "<p>Publications coming soon.</p>";
+    preprintsContainer.innerHTML = "<p>Preprints coming soon.</p>";
     return;
   }
 
-  container.innerHTML = items
+  const renderItems = (entries) => entries
     .map((pub) => {
-      const publicationUrl = typeof pub.url === "string" ? pub.url.trim() : "";
-      const title = pub.title
-        ? publicationUrl
-          ? `<div class="title"><a href="${publicationUrl}" target="_blank" rel="noopener">${pub.title}</a></div>`
-          : `<div class="title">${pub.title}</div>`
+      const title = pub.title ? `<div class="title">${pub.title}</div>` : "";
+      const authors = pub.authors
+        ? `<div class="author">${pub.authors.replace(/\bYiheng Su\b/g, "<strong>Yiheng Su</strong>")}</div>`
         : "";
-      const authors = pub.authors ? `<div class="author">${pub.authors}</div>` : "";
-      const venue = pub.venue ? `<div class="periodical"><em>${pub.venue}</em></div>` : "";
+      const venueName = pub.type === "Journal" || pub.type === "Conference"
+        ? `<strong>${pub.venue}</strong>`
+        : pub.venue;
+      const venue = pub.venue
+        ? `<div class="periodical"><em>${venueName}</em>${pub.year ? `, ${pub.year}` : ""}.${pub.type ? ` <strong>[${pub.type}]</strong>` : ""}</div>`
+        : "";
+      const links = Array.isArray(pub.links) && pub.links.length
+        ? `<div class="publication-links">${pub.links
+            .map((link) => `<a href="${link.url}" target="_blank" rel="noopener noreferrer">[${link.label}]</a>`)
+            .join(" ")}</div>`
+        : "";
 
       return `
         <div class="publication">
           ${title}
           ${authors}
           ${venue}
+          ${links}
         </div>
       `;
     })
     .join("");
+
+  const isPreprint = (pub) => pub.type === "Preprint" || /under review/i.test(pub.venue || "");
+  const publications = items.filter((pub) => !isPreprint(pub));
+  const preprints = items.filter(isPreprint);
+
+  publicationsContainer.innerHTML = publications.length
+    ? renderItems(publications)
+    : "<p>Publications coming soon.</p>";
+  preprintsContainer.innerHTML = preprints.length
+    ? renderItems(preprints)
+    : "<p>Preprints coming soon.</p>";
 }
 
 function renderExperience(items) {
@@ -151,8 +172,10 @@ async function initContent() {
     renderPublications(publications);
   } catch (error) {
     console.error(error);
-    const container = document.getElementById("publications");
-    if (container) container.innerHTML = "<p>Publications coming soon.</p>";
+    const publicationsContainer = document.getElementById("publications");
+    const preprintsContainer = document.getElementById("preprints");
+    if (publicationsContainer) publicationsContainer.innerHTML = "<p>Publications coming soon.</p>";
+    if (preprintsContainer) preprintsContainer.innerHTML = "<p>Preprints coming soon.</p>";
   }
 
   try {

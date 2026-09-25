@@ -15,16 +15,26 @@ This repository hosts a static personal website served from the repository root.
 - Add one object per publication.
 - Fields used by the site:
   - title (string): paper title
-  - url (string): link to PDF/arXiv/DOI
   - authors (string): author list
-  - venue (string): venue + year (this is where the date goes)
+  - venue (string): journal, conference, or review status
+  - year (string): publication or preprint year
+  - type (string): Journal, Conference, or Preprint label
+  - links (array of { label, url }): available Paper, arXiv, and Code links
+
+The site shows entries with type `Preprint` or a venue containing `Under review` in the **Preprints & Under Review** section. Other entries appear under **Publications**.
 
 Example:
 - {
 -   "title": "Paper Title",
--   "url": "https://arxiv.org/abs/xxxx.xxxxx",
 -   "authors": "Author A, Author B",
--   "venue": "Conference Name (2026)"
+-   "venue": "Conference Name",
+-   "year": "2026",
+-   "type": "Conference",
+-   "links": [
+-     { "label": "Paper", "url": "https://doi.org/example" },
+-     { "label": "arXiv", "url": "https://arxiv.org/abs/xxxx.xxxxx" },
+-     { "label": "Code", "url": "https://github.com/example/repository" }
+-   ]
 - }
 
 ### Experience
