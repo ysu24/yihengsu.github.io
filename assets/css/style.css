@@ -45,6 +45,7 @@ a:hover {
 
 .container {
     display: flex;
+    box-sizing: border-box;
     max-width: 1400px;
     margin: 35px auto;
     padding: 0 30px;
@@ -54,6 +55,8 @@ a:hover {
 
 /* Sidebar styles */
 .sidebar {
+    box-sizing: border-box;
+    min-width: 0;
     width: 28%;
     text-align: center;
     position: sticky;
@@ -158,6 +161,8 @@ a:hover {
 
 /* Main content styles */
 .main-content {
+    box-sizing: border-box;
+    min-width: 0;
     width: 72%;
     background: #ffffff;
     padding: 30px 40px;
