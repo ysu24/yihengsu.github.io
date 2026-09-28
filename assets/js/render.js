@@ -25,9 +25,9 @@ function renderProjects(items) {
         ? `<div class="project-links">${project.links
             .map(
               (link) =>
-                `<a href="${link.url}" target="_blank" rel="noopener">${link.label}</a>`
+                `<a href="${link.url}" target="_blank" rel="noopener noreferrer">[${link.label}]</a>`
             )
-            .join("<span>|</span>")}</div>`
+            .join(" ")}</div>`
         : "";
       const periodical = project.periodical
         ? `<div class="periodical"><em>${project.periodical}</em></div>`

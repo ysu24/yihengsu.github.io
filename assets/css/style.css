@@ -266,162 +266,60 @@ a:hover {
     font-weight: 500;
 }
 
-.projects .project {
-    margin-bottom: 14px;
-    padding: 12px 18px;
-    background: #f8f9fa;
-    border-radius: 6px;
-    border-left: 3px solid #6c757d;
-    transition: all 0.2s ease;
+/* Match the plain text layout used by Publications. */
+.projects .project,
+.experience .job,
+.teaching .teaching-item {
+    margin-bottom: 20px;
 }
 
-.projects .project:hover {
-    background: #e9ecef;
-    border-left-color: #0056b3;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-
-.projects .title {
+.projects .title,
+.experience .job .title,
+.teaching .teaching-item .title {
     font-weight: 700;
-    font-size: 0.92rem;
+    font-size: 1rem;
     margin-bottom: 6px;
-    color: #0056b3;
+    color: #212529;
     line-height: 1.35;
 }
 
-.projects .title a {
-    color: #0056b3;
+.projects .description,
+.experience .job .location,
+.experience .job .mentor,
+.teaching .teaching-item .institution {
+    font-size: 0.9rem;
+    color: #212529;
+    margin-bottom: 4px;
+    line-height: 1.4;
 }
 
-.projects .title a:hover {
-    color: #003d82;
-    text-decoration: underline;
-}
-
-.projects .description {
-    font-size: 0.8rem;
-    color: #444;
-    margin-bottom: 6px;
-    line-height: 1.5;
+.projects .periodical,
+.experience .job .date,
+.teaching .teaching-item .term {
+    font-size: 0.85rem;
+    color: #212529;
+    margin-bottom: 4px;
+    font-style: italic;
 }
 
 .projects .project-links {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 4px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0 8px;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
-.projects .project-links a {
+.projects a,
+.experience a,
+.teaching a {
+    color: #212529;
+}
+
+.projects a:hover,
+.experience a:hover,
+.teaching a:hover {
     color: #0056b3;
-}
-
-.projects .project-links a:hover {
-    color: #003d82;
-    text-decoration: underline;
-}
-
-.projects .project-links img {
-    vertical-align: middle;
-    height: 18px;
-}
-
-.projects .periodical {
-    font-size: 0.75rem;
-    color: #888;
-    font-style: italic;
-}
-
-
-/* Experience styles */
-.experience {
-    margin-top: 10px;
-}
-
-.experience .job {
-    margin-bottom: 14px;
-    padding: 12px 18px;
-    background: #f8f9fa;
-    border-radius: 6px;
-    border-left: 3px solid #6c757d;
-    transition: all 0.2s ease;
-}
-
-.experience .job:hover {
-    background: #e9ecef;
-    border-left-color: #0056b3;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-
-.experience .job .title {
-    font-weight: 700;
-    font-size: 0.92rem;
-    margin-bottom: 6px;
-    color: #212529;
-    line-height: 1.35;
-}
-
-.experience .job .location {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 4px;
-    line-height: 1.4;
-}
-
-.experience .job .date {
-    font-size: 0.75rem;
-    color: #888;
-    font-style: italic;
-    margin-bottom: 4px;
-}
-
-.experience .job .mentor {
-    font-size: 0.8rem;
-    color: #444;
-    line-height: 1.4;
-}
-
-/* Teaching styles */
-.teaching {
-    margin-top: 10px;
-}
-
-.teaching .teaching-item {
-    margin-bottom: 14px;
-    padding: 14px 18px;
-    background: #f1f3f5;
-    border-radius: 6px;
-    border-left: 4px solid #2563eb;
-    transition: all 0.2s ease;
-}
-
-.teaching .teaching-item:hover {
-    background: #e9ecef;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-
-.teaching .teaching-item .title {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #212529;
-    margin-bottom: 6px;
-    line-height: 1.35;
-}
-
-.teaching .teaching-item .institution {
-    font-size: 0.82rem;
-    color: #666;
-    margin-bottom: 4px;
-    line-height: 1.4;
-}
-
-.teaching .teaching-item .term {
-    font-size: 0.78rem;
-    color: #777;
-    font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -504,21 +402,6 @@ a:hover {
         font-size: 0.9rem;
         line-height: 1.7;
         margin-bottom: 18px;
-    }
-
-    /* 优化出版物和项目样式 */
-    .projects .project,
-    .experience .job,
-    .teaching .teaching-item {
-        margin-bottom: 18px;
-        padding: 15px 18px;
-        border-left-width: 3px;
-    }
-
-    .projects .project:hover,
-    .experience .job:hover,
-    .teaching .teaching-item:hover {
-        transform: translateX(3px);
     }
 
     .publications .publication .title,
