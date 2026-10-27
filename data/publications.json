@@ -18,6 +18,16 @@
   },
 
   {
+    "title": "Computational Hardness of Near-Optimal Steering Against Known Learning Dynamics",
+    "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "venue": "Accepted by DynaFront (NeurIPS Workshop)",
+    "year": "2026",
+    "type": "Workshop",
+    "links": [
+      { "label": "OpenReview", "url": "https://openreview.net/forum?id=3eAXZkStZJ" }
+    ]
+  },
+  {
     "title": "No Coin Left Behind: Maximizing Strategic Surplus Against No-Regret Dynamics",
     "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
     "venue": "Neurips",
