@@ -1,4 +1,15 @@
 [
+    {
+    "title": "The Complexity of Strategizing Against No-Regret Learners: Pure Where It Is Easy, Hard Even When Mixed",
+    "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "venue": "Under review",
+    "year": "2026",
+    "type": "Preprint",
+    "links": [
+      { "label": "arXiv", "url": "https://arxiv.org/abs/2610.36261" }
+    ]
+  },
+
   {
     "title": "Average-and Last-Iterate Lower Bounds for Optimistic Matrix Mirror-Prox in Quantum Zero-Sum Games",
     "authors": "Yiheng Su, Emmanouil-Vasileios Vlatakis-Gkaragkounis, and Pucheng Xiong",
@@ -8,13 +19,6 @@
     "links": [
       { "label": "arXiv", "url": "https://arxiv.org/abs/2609.38835" }
     ]
-  },
-  {
-    "title": "The Complexity of Strategizing Against No-Regret Learners: Pure Where It Is Easy, Hard Even When Mixed",
-    "authors": "Yiheng Su and Emmanouil-Vasileios Vlatakis-Gkaragkounis",
-    "venue": "Under review",
-    "year": "2026",
-    "type": "Preprint"
   },
 
   {
